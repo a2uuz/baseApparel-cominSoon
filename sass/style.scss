@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Colors
+$Desaturated_Red: #ce9797;
+$Soft_Red: #f96262;
+
+$Dark_Grayish_Red: #413a3a;
+$bg: linear-gradient(135deg, rgba(255,245,245,1) 54%, rgba(255,255,255,1) 100%);
+$btn-bg: linear-gradient(135deg, rgba(248,191,191,1) 54%, rgba(238,140,140,1) 100%); 
+
+// Typograph
+$font: 'Josefin Sans', sans-serif;
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @content
+}
+body{
+    margin: 2rem 0;
+    @include center();
+    height: 100vh;
+    background-color: $bg;
+    justify-content: center;
+    font-family: $font;
+}
+
+
+main{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem;
+    letter-spacing: .5rem;
+
+   span{
+       font-size: 2.3rem;
+       color: $Desaturated_Red;
+       font-weight: 100;
+   }
+   p{
+    font-size: 2.5rem;
+    color: $Dark_Grayish_Red;
+    margin-bottom: 1rem;
+   }
+}
+
+   h4{
+    text-transform:none;
+    letter-spacing: 0;
+    font-size: small;
+    font-weight: 400;
+    color: #ce9797;
+}
+
+.emailAdress{
+    // text-align: center;
+    display: flex;
+    align-items: center;
+    // @include center();
+    margin-left: 3rem;
+
+
+input{
+    border-radius: 5rem;
+    opacity: 0.8;
+    border: $Desaturated_Red solid 1px;
+    height: 50px;
+    width: 12rem;
+    padding: 1rem;
+    font-weight: 600;
+    color: $Desaturated_Red;
+}
+button{
+    position: relative;
+    margin: .5rem;
+    width: 70px;
+    height: 50px;
+    border: none;
+    background: $btn-bg;
+    border-radius: 5rem;
+    display: grid;
+    place-items: center;
+    right: 3rem;
+    box-shadow: rgba(158, 6, 6, 0.1) 0px 20px 25px -5px, rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
+}
+}
