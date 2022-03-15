@@ -32,7 +32,7 @@ $font: 'Josefin Sans', sans-serif;
 }
 body{
     @include center();
-    height: 100vh;
+    height: 110vh;
     background-color: $bg;
     justify-content: center;
     font-family: $font;
