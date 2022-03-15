@@ -31,7 +31,6 @@ $font: 'Josefin Sans', sans-serif;
     @content
 }
 body{
-    margin: 2rem 0;
     @include center();
     height: 100vh;
     background-color: $bg;
@@ -39,7 +38,20 @@ body{
     font-family: $font;
 }
 
+header{
+background:  url('../images/logo.svg') no-repeat;
+background-size: 88px 20px;
 
+width: 80%;
+height: 45px;
+
+}
+
+.heroMobile{
+    background: center/cover url('../images/hero-mobile.jpg') no-repeat;
+    min-height: 16rem;
+    width: 100%;
+}
 main{
     text-transform: uppercase;
     text-align: center;
@@ -71,30 +83,28 @@ main{
     display: flex;
     align-items: center;
     // @include center();
-    margin-left: 3rem;
+    position: relative;
 
 
 input{
+    
     border-radius: 5rem;
-    opacity: 0.8;
+    opacity: 0.6;
     border: $Desaturated_Red solid 1px;
-    height: 50px;
-    width: 12rem;
-    padding: 1rem;
+    width: 17rem;
+    padding: .8rem 1.5rem;
     font-weight: 600;
     color: $Desaturated_Red;
 }
 button{
-    position: relative;
-    margin: .5rem;
-    width: 70px;
-    height: 50px;
+    position: absolute;
+    right: -1rem;
+
+    width: 60px;
+    height: 45px;
     border: none;
     background: $btn-bg;
     border-radius: 5rem;
-    display: grid;
-    place-items: center;
-    right: 3rem;
     box-shadow: rgba(158, 6, 6, 0.1) 0px 20px 25px -5px, rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
 }
 }

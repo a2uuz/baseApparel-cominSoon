@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,6 +31,19 @@ body {
   background-color: linear-gradient(135deg, #fff5f5 54%, white 100%);
   justify-content: center;
   font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background: url("../images/logo.svg") no-repeat;
+  background-size: 88px 20px;
+  width: 80%;
+  height: 45px;
+}
+
+.heroMobile {
+  background: center/cover url("../images/hero-mobile.jpg") no-repeat;
+  min-height: 16rem;
+  width: 100%;
 }
 
 main {
@@ -68,32 +80,27 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 3rem;
+  position: relative;
 }
 
 .emailAdress input {
   border-radius: 5rem;
-  opacity: 0.8;
+  opacity: 0.6;
   border: #ce9797 solid 1px;
-  height: 50px;
-  width: 12rem;
-  padding: 1rem;
+  width: 17rem;
+  padding: .8rem 1.5rem;
   font-weight: 600;
   color: #ce9797;
 }
 
 .emailAdress button {
-  position: relative;
-  margin: .5rem;
-  width: 70px;
-  height: 50px;
+  position: absolute;
+  right: -1rem;
+  width: 60px;
+  height: 45px;
   border: none;
   background: linear-gradient(135deg, #f8bfbf 54%, #ee8c8c 100%);
   border-radius: 5rem;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  right: 3rem;
   -webkit-box-shadow: rgba(158, 6, 6, 0.1) 0px 20px 25px -5px, rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
           box-shadow: rgba(158, 6, 6, 0.1) 0px 20px 25px -5px, rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
 }
