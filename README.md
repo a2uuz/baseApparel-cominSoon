@@ -6,4 +6,4 @@
 
 **Thanks for checking out my work** 🚀
 
-[Her's the Live site](https://a2uuz.github.io/baseApparel-cominSoon/)
+[Here's the Live site](https://a2uuz.github.io/baseApparel-cominSoon/)
