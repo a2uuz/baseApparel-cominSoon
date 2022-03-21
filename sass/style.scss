@@ -53,7 +53,7 @@ header {
 }
 
 .heroMobile {
-  background: center/contain url("../images/hero-mobile.jpg") no-repeat;
+  background: center/cover url("../images/hero-mobile.jpg") no-repeat;
   min-height: 16em;
 }
 main {
@@ -82,24 +82,24 @@ h4 {
   color: #ce9797;
 }
 
-.emailAdress {
+#form, .alert {
   @include center();
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
 
   input {
     border-radius: 5rem;
     opacity: 0.6;
     border: $Desaturated_Red solid 1px;
-    width: 15rem;
+    width: 105%;
     padding: 0.8rem 1.5rem;
     font-weight: 600;
     color: $Desaturated_Red;
   }
   button {
     position: relative;
-    right: 2rem;
-
+     right: -6rem;
+    bottom: 2.8rem;
     width: 60px;
     height: 45px;
     border: none;
@@ -108,7 +108,26 @@ h4 {
     box-shadow: rgba(158, 6, 6, 0.1) 0px 20px 25px -5px,
       rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
   }
+
+    #text{
+    right: .2rem;
+    bottom: 2rem;
+    position: relative;
+    }
 }
+
+  #form.invalid
+ .alert::before{
+    content: '';
+    position: relative;
+    left: 3rem;
+    top: 2rem;
+    width: 24px;
+    height: 24px;
+    // background-color: red;
+    background: center/cover url('../images/icon-error.svg');
+    z-index: 10;
+ }
 
 @media (min-width: 1180px) {
   .heroMobile {
@@ -155,20 +174,39 @@ h4 {
     }
 
     h4 {
-      // font-size: medium;
       line-height: 1.5rem;
-      // padding-right:5rem ;
     }
 
-    .emailAdress {
+    #form {
       input {
         width: 20rem;
       }
       button {
         width: 5rem;
+        left: 9.5rem;
+        top: -2.8rem;
       }
+    #text{
+        position: relative;
+        right: 3rem;
+        bottom: 2rem;
+      }
+
+     }
+  
     }
-  }
+
+  #form.invalid
+ .alert::before{
+    content: '';
+    position: relative;
+    left: 6rem;
+    top: 2rem;
+    width: 24px;
+    height: 24px;
+    background: center/cover url('../images/icon-error.svg');
+    z-index: 10;
+ }
 
   #right {
     grid-area: two;
