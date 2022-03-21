@@ -90,7 +90,7 @@ h4 {
 
   input {
     border-radius: 5rem;
-    opacity: 0.6;
+    opacity: 0.7;
     border: $Desaturated_Red solid 1px;
     width: 105%;
     padding: 0.8rem 1.5rem;
@@ -139,8 +139,8 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, minmax(20%, 1fr));
     grid-template-areas: "one two";
-    background: center/cover url("../images/bg-pattern-desktop.svg") no-repeat;
-    overflow: hidden;
+    background: bottom/cover url("../images/bg-pattern-desktop.svg") no-repeat;
+    // overflow: hidden;
   }
 
   #left {
@@ -155,9 +155,11 @@ h4 {
     }
 
     header {
-      background-size: 118px 25px;
+      position: relative;
+      top: -2rem;
+      background-size: 158px 35px;
       width: 100%;
-      height: 33px;
+      height: 40px;
       margin: 0;
     }
 
@@ -166,28 +168,29 @@ h4 {
       padding: 5rem 0 2.5rem 0;
 
       h2 {
-        font-size: 3.2rem;
+        font-size: 5.2rem;
       }
       h3 {
-        font-size: 3.4rem;
+        font-size: 5.4rem;
       }
       h4 {
+        font-size: 1rem;
         line-height: 1.2rem;
       }
     }
 
     #form {
       input {
-        width: 20rem;
+        width: 26rem;
       }
       button {
         width: 5rem;
-        left: 9.5rem;
+        left: 12rem;
         top: -2.8rem;
       }
       #text {
         position: relative;
-        right: 3rem;
+        right: 6rem;
         bottom: 2rem;
       }
     }
@@ -196,7 +199,7 @@ h4 {
   #form.invalid .alert::before {
     content: "";
     position: relative;
-    left: 6rem;
+    left: 8.5rem;
     top: 2rem;
     width: 24px;
     height: 24px;
