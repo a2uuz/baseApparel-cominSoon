@@ -56,18 +56,18 @@ header {
   background: center/cover url("../images/hero-mobile.jpg") no-repeat;
   min-height: 16em;
 }
-main {
+article {
   text-transform: uppercase;
   text-align: center;
   padding: 3rem;
   letter-spacing: 0.5rem;
 
-  span {
+  h2 {
     font-size: 2.3rem;
     color: $Desaturated_Red;
     font-weight: 100;
   }
-  p {
+  h3 {
     font-size: 2.5rem;
     color: $Dark_Grayish_Red;
     margin-bottom: 1rem;
@@ -82,7 +82,8 @@ h4 {
   color: #ce9797;
 }
 
-#form, .alert {
+#form,
+.alert {
   @include center();
   flex-direction: column;
   position: relative;
@@ -98,7 +99,7 @@ h4 {
   }
   button {
     position: relative;
-     right: -6rem;
+    right: -6rem;
     bottom: 2.8rem;
     width: 60px;
     height: 45px;
@@ -109,25 +110,24 @@ h4 {
       rgba(240, 89, 89, 0.04) 0px 10px 10px -5px;
   }
 
-    #text{
-    right: .2rem;
+  #text {
+    right: 0.2rem;
     bottom: 2rem;
     position: relative;
-    }
+  }
 }
 
-  #form.invalid
- .alert::before{
-    content: '';
-    position: relative;
-    left: 3rem;
-    top: 2rem;
-    width: 24px;
-    height: 24px;
-    // background-color: red;
-    background: center/cover url('../images/icon-error.svg');
-    z-index: 10;
- }
+#form.invalid .alert::before {
+  content: "";
+  position: relative;
+  left: 3rem;
+  top: 2rem;
+  width: 24px;
+  height: 24px;
+  // background-color: red;
+  background: center/cover url("../images/icon-error.svg");
+  z-index: 10;
+}
 
 @media (min-width: 1180px) {
   .heroMobile {
@@ -161,20 +161,19 @@ h4 {
       margin: 0;
     }
 
-    main {
+    article {
       text-align: left;
       padding: 5rem 0 2.5rem 0;
 
-      span {
+      h2 {
         font-size: 3.2rem;
       }
-      p {
+      h3 {
         font-size: 3.4rem;
       }
-    }
-
-    h4 {
-      line-height: 1.5rem;
+      h4 {
+        line-height: 1.2rem;
+      }
     }
 
     #form {
@@ -186,27 +185,24 @@ h4 {
         left: 9.5rem;
         top: -2.8rem;
       }
-    #text{
+      #text {
         position: relative;
         right: 3rem;
         bottom: 2rem;
       }
-
-     }
-  
     }
+  }
 
-  #form.invalid
- .alert::before{
-    content: '';
+  #form.invalid .alert::before {
+    content: "";
     position: relative;
     left: 6rem;
     top: 2rem;
     width: 24px;
     height: 24px;
-    background: center/cover url('../images/icon-error.svg');
+    background: center/cover url("../images/icon-error.svg");
     z-index: 10;
- }
+  }
 
   #right {
     grid-area: two;
